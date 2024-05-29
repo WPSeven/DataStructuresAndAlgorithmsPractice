@@ -11,5 +11,9 @@ public class Main {
 
         System.out.println("Prime Count " + ans);
 
+        System.out.println(12 / 10);
+        System.out.println(12 / 20);
+        System.out.println(12f / 20f);
+        System.out.println(12 % 20);
     }
 }
