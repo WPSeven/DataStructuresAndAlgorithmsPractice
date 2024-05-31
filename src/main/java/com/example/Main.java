@@ -15,5 +15,19 @@ public class Main {
         System.out.println(12 / 20);
         System.out.println(12f / 20f);
         System.out.println(12 % 20);
+
+
+
+        // Integer concatenate
+        int[] nums = {1, 0, 2, 2, 1};
+        int retval = 0;
+        for (int digit : nums)
+        {
+            retval *= 10;
+            retval += digit;
+        }
+        System.out.println("Return value is: " + retval);
+
+
     }
 }
