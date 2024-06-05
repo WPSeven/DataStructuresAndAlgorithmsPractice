@@ -29,5 +29,11 @@ public class Main {
         System.out.println("Return value is: " + retval);
 
 
+
+        //Hint: In integer arithmetic, (6/4) * 4 = 4
+        System.out.println((6/4) * 4);
+        System.out.println((6/5) * 5);
+        System.out.println((8/5) * 5);
+
     }
 }
