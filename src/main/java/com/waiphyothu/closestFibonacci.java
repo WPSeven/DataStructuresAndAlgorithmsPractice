@@ -6,6 +6,7 @@ public class closestFibonacci {
         System.out.println(closestFibonacci(12));
         System.out.println(closestFibonacci(33));
         System.out.println(closestFibonacci(34));
+        System.out.println(closestFibonacci(-1));
     }
 
     static int closestFibonacci(int n) {
