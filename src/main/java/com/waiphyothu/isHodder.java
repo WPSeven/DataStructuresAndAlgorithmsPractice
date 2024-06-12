@@ -8,12 +8,33 @@ public class isHodder {
         System.out.println(isHodder(31));  // Output: 1
         System.out.println(isHodder(127)); // Output: 1
         System.out.println(isHodder(10));  // Output: 0
-        System.out.println(isHodder(15));  // Output: 0
         System.out.println(isHodder(2));   // Output: 0
 
     }
 
-    static int isHodder(int n){
+
+    static int isHodder(int n) {
+        if (n <= 1) {
+            return 0;
+        }
+
+        if (!isPrime(n)) {
+            return 0;
+        }
+
+        int powerOfTwoMinusOne = 1; // Start with 2^0 - 1
+        for (int j = 1; ; j++) {
+            powerOfTwoMinusOne = 2 * powerOfTwoMinusOne + 1; // This calculates 2^j - 1
+            if (powerOfTwoMinusOne == n) {
+                return 1;
+            } else if (powerOfTwoMinusOne > n) {
+                break;
+            }
+        }
+        return 0;
+    }
+
+    static int isHodder2(int n){
         if (n <= 1) {
             return 0;
         }
