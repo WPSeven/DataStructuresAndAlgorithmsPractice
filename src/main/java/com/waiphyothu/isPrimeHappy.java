@@ -13,8 +13,10 @@ public class isPrimeHappy {
     static int isPrimeHappy(int n){
 
         int sum = 0;
+
         boolean isSmallerPrime = false;
-        for( int i = 2; i < n; i++){ //
+
+        for( int i = 2; i < n; i++){
             if (isPrime(i)){
                 isSmallerPrime = true;
                 sum += i;
@@ -28,21 +30,6 @@ public class isPrimeHappy {
     }
 
 
-    static int isPrimeHappy2(int n) {
-        int number = 2;
-        boolean primeFlag = false;
-        int sum = 0;
-        while (number < n) {
-            if (isPrime(number)) {
-                primeFlag = true;
-                sum += number;
-            }
-            number++;
-        }
-        if (primeFlag && sum % n == 0)
-            return 1;
-        else return 0;
-    }
 
     static boolean isPrime(int n){
         for(int i = 2; i < n; i++){

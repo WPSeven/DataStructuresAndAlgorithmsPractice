@@ -14,6 +14,7 @@ public class is121Array {
     }
 
     static int is121Array(int[] a) {
+
         int totalStart1 = 0;
         for (int i = 0; i < a.length; i++) {
             if (a[i] == 1) {
@@ -41,13 +42,9 @@ public class is121Array {
             }
         }
 
-
         if (totalStart1 != totalEnd1 || totalStart1 == 0 || total2 == 0) {
             return 0;
         }
-
-
-
 
         return 1;
     }
